@@ -25,7 +25,7 @@ json_labels_path = './dataset/train_json/'
 
 sets = ['train']
 
-class_labels = ["closed eye", "opened eye"]
+class_labels = ["class 1", "class 2"]
 
 # transform = A.Compose([A.HorizontalFlip(p=0.5),
 #                       A.RandomBrightnessContrast(p=0.2)], bbox_params=A.BboxParams(format='coco', label_fields=['class_labels']))
