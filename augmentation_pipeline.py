@@ -72,9 +72,9 @@ def get_bbox_from_json(annotation_key, cat_id, image_key, f_name):
         bbox_list.append(bbox)
         class_label = data[annotation_key][i]['id']
         if class_label == 1.0:
-            class_list.append('opened eye')
+            class_list.append('class 2')
         elif class_label == 0.0:
-            class_list.append('closed eye')
+            class_list.append('class 1')
     return image_list, bbox_list, class_list
 
 annotation_key = 'annotations'
