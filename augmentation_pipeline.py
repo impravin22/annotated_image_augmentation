@@ -189,7 +189,6 @@ for i in range(len(list(img_indices_dict))):
     print(transformed_ann_list)
 
 with open('./augmented_dataset/train_data_' + str(transform_type) + '.json', 'w') as json_to_write:
-    # with open('./eye_key_point_dataset/test/test_val.json', 'w') as json_to_write:
     #     json_to_write.write(data)
     json.dump(data, json_to_write)
     print('written successfully')
